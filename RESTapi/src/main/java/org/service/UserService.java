@@ -21,7 +21,7 @@ public class UserService {
 
     @GET
     @Path("/users")
-    @Produces(MediaType.APPLICATION_XML)
+    @Produces("text/plain")
     public List<Integer> getUsers() {
 
         List<Integer> lst = new ArrayList<Integer>();

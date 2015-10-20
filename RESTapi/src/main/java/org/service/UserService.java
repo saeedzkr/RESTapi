@@ -22,12 +22,14 @@ public class UserService {
     @GET
     @Path("/users")
     @Produces("text/plain")
-    public List<Integer> getUsers() {
+    public String getUsers() {
 
-        List<Integer> lst = new ArrayList<Integer>();
-        for (int i = 0; i < 10; i++) {
-            lst.add(i);
-        }
-        return lst;
+//        List<Integer> lst = new ArrayList<Integer>();
+//        for (int i = 0; i < 10; i++) {
+//            lst.add(i);
+//        }
+//        return lst;
+
+        return "saeed";
     }
 }

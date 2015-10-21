@@ -9,11 +9,7 @@ import sun.swing.BakedArrayList;
 
 import java.util.ArrayList;
 import java.util.List;
-
-import javax.ws.rs.GET;
-import javax.ws.rs.Path;
-import javax.ws.rs.Produces;
-import javax.ws.rs.core.MediaType;
+import javax.ws.rs.*;
 
 @Path("/UserService")
 public class UserService {
@@ -21,15 +17,17 @@ public class UserService {
 
     @GET
     @Path("/users")
-    @Produces("text/plain")
-    public String getUsers() {
+    @Produces("application/xml")
+    public List<String> getUsers(@QueryParam("username") String user) {
 
-//        List<Integer> lst = new ArrayList<Integer>();
-//        for (int i = 0; i < 10; i++) {
-//            lst.add(i);
-//        }
-//        return lst;
+        List<String> lst = new ArrayList<>();
 
-        return "saeed";
+        for (int i = 0; i < 10; i++) {
+
+            lst.add(user);
+
+        }
+        return lst;
+
     }
 }

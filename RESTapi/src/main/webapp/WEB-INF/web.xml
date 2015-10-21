@@ -5,6 +5,10 @@
    http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
          id="WebApp_ID" version="3.0">
     <display-name>User Management</display-name>
+    <welcome-file-list>
+        <welcome-file>index.xhtml</welcome-file>
+    </welcome-file-list>
+
     <servlet>
         <servlet-name>Jersey RESTful Application</servlet-name>
         <servlet-class>
@@ -14,6 +18,13 @@
             <param-name>com.sun.jersey.config.property.packages</param-name>
             <param-value>org.service</param-value>
         </init-param>
+
+        <init-param>
+            <param-name>com.sun.jersey.api.json.POJOMappingFeature</param-name>
+            <param-value>true</param-value>
+        </init-param>
+
+        <load-on-startup>1</load-on-startup>
         <!--<init-param>-->
             <!--<param-name>jersey.config.server.provider.packages</param-name>-->
             <!--<param-value>com.tutorialspoint</param-value>-->
@@ -21,6 +32,6 @@
     </servlet>
     <servlet-mapping>
         <servlet-name>Jersey RESTful Application</servlet-name>
-        <url-pattern>/rest/*</url-pattern>
+        <url-pattern>/url/*</url-pattern>
     </servlet-mapping>
 </web-app>

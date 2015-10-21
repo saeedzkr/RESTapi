@@ -1,1 +1,2 @@
-org/service/UserService.class
+org\service\UserService.class
+org\entity\Credit.class

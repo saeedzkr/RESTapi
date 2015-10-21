@@ -1,15 +1,12 @@
 package org.service;
 
-/**
- * Created by sector7 on 10/19/15.
- */
-
-
-import sun.swing.BakedArrayList;
+import org.entity.Credit;
 
 import java.util.ArrayList;
 import java.util.List;
 import javax.ws.rs.*;
+import javax.ws.rs.core.MediaType;
+import javax.ws.rs.core.Response;
 
 @Path("/UserService")
 public class UserService {
@@ -17,17 +14,30 @@ public class UserService {
 
     @GET
     @Path("/users")
-    @Produces("application/xml")
-    public List<String> getUsers(@QueryParam("username") String user) {
-
-        List<String> lst = new ArrayList<>();
-
-        for (int i = 0; i < 10; i++) {
-
-            lst.add(user);
-
-        }
-        return lst;
-
+    public String getUsers(@QueryParam("username") String user) {
+        return "hello " + user;
     }
+
+
+    @GET
+    @Path("/credit")
+    @Consumes("text/plain")
+    public Response responseCredit(@QueryParam("username") String user ,@QueryParam("password") String password) {
+        String output = "Prameter1: " + user + "\nParameter2: " + password;
+        return Response.status(200).entity(output).build();
+    }
+
+    @GET
+    @Path("/remain")
+    @Consumes(MediaType.APPLICATION_JSON)
+    public Credit remain(@QueryParam("username") String user ,@QueryParam("password") String password)
+    {
+
+        Credit credit = new Credit("saeed" , "fatoldsun" , 100 );
+//        String output = "Prameter1: " + user + "\nParameter2: " + password;
+//        return Response.status(200).entity(output).build();
+
+        return credit;
+    }
+
 }

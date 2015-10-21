@@ -6,6 +6,7 @@ import javax.xml.bind.annotation.XmlRootElement;
  * Created by s.zakipour on 10/21/2015.
  */
 //@XmlRootElement
+
 public class Credit {
 
 
@@ -38,7 +39,7 @@ public class Credit {
     public void setPassword(String password) {
         this.password = password;
     }
-
+//todo ok
     public long getAccountID() {
         return accountID;
     }
@@ -49,20 +50,10 @@ public class Credit {
 
     @Override
     public String toString() {
-        return "credit{" +
+        return "Credit{" +
                 "username='" + username + '\'' +
                 ", password='" + password + '\'' +
                 ", accountID=" + accountID +
                 '}';
     }
-
-//    @Override
-//    public String toString() {
-//        return new StringBuffer(" username : ").append(this.username)
-//                .append(" password : ").append(this.username)
-//                .append(" accountid :").append(this.accountID).toString();
-//    }
-
-
-
 }

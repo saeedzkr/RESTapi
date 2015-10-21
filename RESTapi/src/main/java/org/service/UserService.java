@@ -21,18 +21,17 @@ public class UserService {
 
     @GET
     @Path("/credit")
-    @Consumes("text/plain")
+    @Produces(MediaType.APPLICATION_JSON)
     public Response responseCredit(@QueryParam("username") String user ,@QueryParam("password") String password) {
         String output = "Prameter1: " + user + "\nParameter2: " + password;
         return Response.status(200).entity(output).build();
     }
-
+//todo ok
     @GET
     @Path("/remain")
-    @Consumes(MediaType.APPLICATION_JSON)
+    @Produces(MediaType.APPLICATION_JSON)
     public Credit remain(@QueryParam("username") String user ,@QueryParam("password") String password)
     {
-
         Credit credit = new Credit("saeed" , "fatoldsun" , 100 );
 //        String output = "Prameter1: " + user + "\nParameter2: " + password;
 //        return Response.status(200).entity(output).build();

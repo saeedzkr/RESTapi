@@ -6,9 +6,8 @@
          id="WebApp_ID" version="3.0">
     <display-name>User Management</display-name>
     <welcome-file-list>
-        <welcome-file>index.xhtml</welcome-file>
+        <welcome-file>index.html</welcome-file>
     </welcome-file-list>
-
     <servlet>
         <servlet-name>Jersey RESTful Application</servlet-name>
         <servlet-class>
@@ -27,5 +26,15 @@
     <servlet-mapping>
         <servlet-name>Jersey RESTful Application</servlet-name>
         <url-pattern>/url/*</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>ServiceHanlder</servlet-name>
+        <servlet-class>
+            org.controller.ServiceHandler
+        </servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ServiceHanlder</servlet-name>
+        <url-pattern>/main.do</url-pattern>
     </servlet-mapping>
 </web-app>

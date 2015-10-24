@@ -1,5 +1,6 @@
 package org.service;
 
+
 import org.entity.Credit;
 
 import java.util.ArrayList;
@@ -26,11 +27,11 @@ public class UserService {
         String output = "Prameter1: " + user + "\nParameter2: " + password;
         return Response.status(200).entity(output).build();
     }
-//todo ok
+        //todo ok
     @GET
     @Path("/remain")
     @Produces(MediaType.APPLICATION_JSON)
-    public Credit remain(@QueryParam("username") String user ,@QueryParam("password") String password)
+    public org.entity.Credit remain(@QueryParam("username") String user ,@QueryParam("password") String password)
     {
         Credit credit = new Credit("saeed" , "fatoldsun" , 100 );
 //        String output = "Prameter1: " + user + "\nParameter2: " + password;

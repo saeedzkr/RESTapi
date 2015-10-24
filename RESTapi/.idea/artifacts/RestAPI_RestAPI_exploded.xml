@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="RestAPI:RestAPI exploded">
+    <root id="root">
+      <element id="javaee-facet-resources" facet="RestAPI/web/RestAPI" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="RestAPI" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="file-copy" path="$MAVEN_REPOSITORY$/log4j/log4j/1.2.17/log4j-1.2.17.jar" />
+          <element id="file-copy" path="$MAVEN_REPOSITORY$/com/sun/jersey/jersey-json/1.9/jersey-json-1.9.jar" />
+          <element id="file-copy" path="$MAVEN_REPOSITORY$/org/codehaus/jettison/jettison/1.1/jettison-1.1.jar" />
+          <element id="file-copy" path="$MAVEN_REPOSITORY$/stax/stax-api/1.0.1/stax-api-1.0.1.jar" />
+          <element id="file-copy" path="$MAVEN_REPOSITORY$/com/sun/xml/bind/jaxb-impl/2.2.3-1/jaxb-impl-2.2.3-1.jar" />
+          <element id="file-copy" path="$MAVEN_REPOSITORY$/javax/xml/bind/jaxb-api/2.2.2/jaxb-api-2.2.2.jar" />
+          <element id="file-copy" path="$MAVEN_REPOSITORY$/javax/xml/stream/stax-api/1.0-2/stax-api-1.0-2.jar" />
+          <element id="file-copy" path="$MAVEN_REPOSITORY$/javax/activation/activation/1.1/activation-1.1.jar" />
+          <element id="file-copy" path="$MAVEN_REPOSITORY$/org/codehaus/jackson/jackson-core-asl/1.8.3/jackson-core-asl-1.8.3.jar" />
+          <element id="file-copy" path="$MAVEN_REPOSITORY$/org/codehaus/jackson/jackson-mapper-asl/1.8.3/jackson-mapper-asl-1.8.3.jar" />
+          <element id="file-copy" path="$MAVEN_REPOSITORY$/org/codehaus/jackson/jackson-jaxrs/1.8.3/jackson-jaxrs-1.8.3.jar" />
+          <element id="file-copy" path="$MAVEN_REPOSITORY$/org/codehaus/jackson/jackson-xc/1.8.3/jackson-xc-1.8.3.jar" />
+          <element id="file-copy" path="$MAVEN_REPOSITORY$/com/sun/jersey/jersey-core/1.9/jersey-core-1.9.jar" />
+          <element id="file-copy" path="$MAVEN_REPOSITORY$/javax/servlet/servlet-api/2.5/servlet-api-2.5.jar" />
+          <element id="file-copy" path="$MAVEN_REPOSITORY$/com/sun/jersey/jersey-server/1.9/jersey-server-1.9.jar" />
+          <element id="file-copy" path="$MAVEN_REPOSITORY$/asm/asm/3.1/asm-3.1.jar" />
+          <element id="file-copy" path="$MAVEN_REPOSITORY$/mysql/mysql-connector-java/5.1.36/mysql-connector-java-5.1.36.jar" />
+        </element>
+      </element>
+    </root>
+  </artifact>
+</component>
+
